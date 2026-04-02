@@ -77,7 +77,7 @@ void konversiBerat() {
     printf(" Masukkan berat (kg) : ");
     if (scanf("%f", &kg) != 1) {
         printf("\n [!] Error: Input harus berupa angka.\n");
-        return 1;
+        return;
     }
 
     gram = kg * 1000;
@@ -101,13 +101,13 @@ void konversiWaktu() {
     if (scanf("%f", &jam) != 1) {
         printf("Error: Masukkan angka yang valid!\n");
         while(getchar() != '\n'); // Membersihkan buffer input
-        return 1;
+        return;
     }
 
     // Validasi nilai tidak boleh negatif
     if (jam < 0) {
         printf("Error: Waktu tidak boleh negatif!\n");
-        return 1;
+        return;
     }
 
     // Perhitungan
